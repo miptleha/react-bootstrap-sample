@@ -18,4 +18,3 @@ Test application for studying the capabilities of the component library [React B
 | Users   | 10  |
 | About   | 10  |
 
-How fast can you create a website like this?

@@ -1,4 +1,4 @@
-# Sample React-Bootstrap application
+# Sample React Bootstrap application
 
 [https://react-bootstrap-sample.vercel.app/](https://react-bootstrap-sample.vercel.app/)
 

@@ -19,18 +19,18 @@ export default function NaviBar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link eventKey="i" as={NavLink} to="/">Home</Nav.Link>
-                            <Nav.Link eventKey="i" as={NavLink} to="/users">Users</Nav.Link>
-                            <Nav.Link eventKey="i" as={NavLink} to="/about">About</Nav.Link>
+                            <Nav.Link eventKey="i1" as={NavLink} to="/">Home</Nav.Link>
+                            <Nav.Link eventKey="i2" as={NavLink} to="/users">Users</Nav.Link>
+                            <Nav.Link eventKey="i3" as={NavLink} to="/about">About</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Item>
-                                <Nav.Link className={`p-0 me-2 ${toggle ? "pb-2" : ""}`} eventKey="i">
+                                <Nav.Link className={`p-0 me-2 ${toggle ? "pb-2" : ""}`} eventKey="i4">
                                     <Button onClick={handleShow}>Log in</Button>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link className="p-0" eventKey="i">
+                                <Nav.Link className="p-0" eventKey="i5">
                                     <Button onClick={handleShow}>Register</Button>
                                 </Nav.Link>
                             </Nav.Item>
@@ -38,7 +38,7 @@ export default function NaviBar() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            
+
             <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Log In</Modal.Title>

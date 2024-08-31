@@ -4,8 +4,6 @@
 
 Test application for studying the capabilities of the component library [React Bootstrap](https://react-bootstrap.netlify.app/).
 
-The library allows you to quickly create pages with standard elements.
-
 ![Site image](app.png)
 
 | Component  | Created in (minutes) |

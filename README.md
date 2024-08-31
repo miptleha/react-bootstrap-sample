@@ -4,7 +4,7 @@ Test application for studying the capabilities of the component library [React B
 
 The library allows you to quickly create pages with standard elements.
 
-![app.png](Site image)
+![Site image](app.png)
 
 | Component  | Created in (minutes) |
 | ------------- | ------------- |

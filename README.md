@@ -2,7 +2,7 @@
 
 [https://react-bootstrap-sample.vercel.app/](https://react-bootstrap-sample.vercel.app/)
 
-Test application for studying the capabilities of the component library [React Bootstrap](https://react-bootstrap.netlify.app/).
+Test application for studying the capabilities of the component library [React Bootstrap](https://react-bootstrap.netlify.app/)
 
 ![Site image](app.png)
 

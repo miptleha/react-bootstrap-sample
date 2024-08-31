@@ -8,25 +8,37 @@ export default function NaviBar() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const [toggle, setToggle] = useState(false);
+    const handleToggle = (state) => setToggle(state);
+
     return (
         <>
-            <Navbar expand="md" bg="dark" variant="dark">
+            <Navbar expand="md" bg="dark" variant="dark" collapseOnSelect onToggle={handleToggle}>
                 <Container>
                     <Navbar.Brand>Alpine Blog</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
-                            <Nav.Link as={NavLink} to="/users">Users</Nav.Link>
-                            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
+                            <Nav.Link eventKey="i" as={NavLink} to="/">Home</Nav.Link>
+                            <Nav.Link eventKey="i" as={NavLink} to="/users">Users</Nav.Link>
+                            <Nav.Link eventKey="i" as={NavLink} to="/about">About</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Button className="me-2" onClick={handleShow}>Log in</Button>
-                            <Button onClick={handleShow}>Register</Button>
+                            <Nav.Item>
+                                <Nav.Link className={`p-0 me-2 ${toggle ? "pb-2" : ""}`} eventKey="i">
+                                    <Button onClick={handleShow}>Log in</Button>
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className="p-0" eventKey="i">
+                                    <Button onClick={handleShow}>Register</Button>
+                                </Nav.Link>
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            
             <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Log In</Modal.Title>
